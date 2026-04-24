@@ -18,16 +18,16 @@ waiting list is notified (via a flag on their dashboard) and can then book
 the freed seat.
 
 The system includes two user roles:
-•⁠  ⁠Regular customers: view their bookings, cancel reservations, join waiting lists.
-•⁠  ⁠Administrators: add/edit/delete movies, manage showtimes, promote users,
+*  Regular customers: view their bookings, cancel reservations, join waiting lists.
+*  Administrators: add/edit/delete movies, manage showtimes, promote users,
   monitor the waiting list.
 
 **Technical stack:**
-•⁠  ⁠Backend: Flask (routing, business logic)
-•⁠  ⁠Database: SQLite + SQLAlchemy ORM
-•⁠  ⁠Authentication: Flask-Login + bcrypt (password hashing)
-•⁠  ⁠Background jobs: APScheduler (auto-release expired pending bookings)
-•⁠  ⁠Frontend: HTML5, CSS3 (responsive, gradient design, animated seat cards)
+*  Backend: Flask (routing, business logic)
+*  Database: SQLite + SQLAlchemy ORM
+*  Authentication: Flask-Login + bcrypt (password hashing)
+*  ⁠Background jobs: APScheduler (auto-release expired pending bookings)
+*  Frontend: HTML5, CSS3 (responsive, gradient design, animated seat cards)
 
 This project demonstrates core programming concepts: HTTP requests/responses,
 user authentication, database relationships (one-to-many, foreign keys),
@@ -86,15 +86,15 @@ tickets, or a recommendation engine.
    No separate database server is needed.
 
 **TECHNOLOGIES USED**
-•⁠  ⁠Python 3.8+ (core language)
-•⁠  ⁠Flask (web framework)
-•⁠  ⁠Flask-SQLAlchemy (ORM for database)
-•⁠  ⁠Flask-Login (session management)
-•⁠  ⁠bcrypt (password hashing)
-•⁠  ⁠APScheduler (background job scheduler)
-•⁠  ⁠SQLite (embedded database)
-•⁠  ⁠HTML5, CSS3 (frontend)
-•⁠  ⁠Jinja2 (templating engine)
+*  ⁠Python 3.8+ (core language)
+*  ⁠Flask (web framework)
+*  Flask-SQLAlchemy (ORM for database)
+*  ⁠Flask-Login (session management)
+*  bcrypt (password hashing)
+*  ⁠APScheduler (background job scheduler)
+*  SQLite (embedded database)
+*  ⁠HTML5, CSS3 (frontend)
+*  Jinja2 (templating engine)
 
 **ADMIN CREDENTIALS (pre‑seeded)**
 Username: admin
