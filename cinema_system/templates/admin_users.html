@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h2>👥 Users</h2><ul>{% for u in users %}<li><strong>{{ u.username }}</strong> ({{ u.email }}) – Admin: {{ u.is_admin }} – <a href="{{ url_for("promote_user", user_id=u.id) }}">Make Admin</a> – <a href="{{ url_for("delete_user", user_id=u.id) }}" onclick="return confirm('Delete?')">Delete</a></li>{% endfor %}</ul>{% endblock %}
