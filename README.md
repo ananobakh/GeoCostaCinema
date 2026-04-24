@@ -1,12 +1,6 @@
-================================================================================
-                        GE O C O S T A   C I N E M A
-                Web-Based Cinema Reservation System with Waiting List
-================================================================================
+**PROJECT NAME:** GeoCosta Cinema
 
-PROJECT NAME: GeoCosta Cinema
-
-BRIEF DESCRIPTION
-================================================================================
+**BRIEF DESCRIPTION**
 GeoCosta Cinema is a fully functional web-based cinema reservation system built
 with Python (Flask), SQLite, and custom HTML/CSS that solves the real-world
 problem of overbooking and no-shows.
@@ -23,12 +17,12 @@ list. When a pending booking expires or is cancelled, the first person on the
 waiting list is notified (via a flag on their dashboard) and can then book
 the freed seat.
 
-The system includes two user roles:
+**The system includes two user roles:**
 •⁠  ⁠Regular customers: view their bookings, cancel reservations, join waiting lists.
 •⁠  ⁠Administrators: add/edit/delete movies, manage showtimes, promote users,
   monitor the waiting list.
 
-Technical stack:
+**Technical stack:**
 •⁠  ⁠Backend: Flask (routing, business logic)
 •⁠  ⁠Database: SQLite + SQLAlchemy ORM
 •⁠  ⁠Authentication: Flask-Login + bcrypt (password hashing)
@@ -42,10 +36,9 @@ CRUD operations, asynchronous background jobs, and separation of concerns
 and can be extended with payment simulation, email notifications, QR code
 tickets, or a recommendation engine.
 
-SETUP INSTRUCTIONS
-================================================================================
+**SETUP INSTRUCTIONS**
 1.⁠ ⁠Clone the repository:
-   git clone https://github.com/yourusername/geocosta-cinema.git
+   git clone https: https://github.com/ananobakh/GeoCostaMovies
    cd geocosta-cinema
 
 2.⁠ ⁠Open the project in your IDE (VS Code, PyCharm, etc.).
@@ -62,8 +55,7 @@ SETUP INSTRUCTIONS
 6.⁠ ⁠Open your web browser and go to:
    http://127.0.0.1:5000
 
-USAGE INSTRUCTIONS
-================================================================================
+**USAGE INSTRUCTIONS**
 1.⁠ ⁠On first visit, you will see the homepage listing current movies.
 2.⁠ ⁠Use the navigation bar to either LOGIN or REGISTER a new account.
    - To register, click "Register", fill in username, email, and password.
@@ -93,8 +85,7 @@ USAGE INSTRUCTIONS
 7.⁠ ⁠The SQLite database (cinema.db) is automatically created and managed.
    No separate database server is needed.
 
-TECHNOLOGIES USED
-================================================================================
+**TECHNOLOGIES USED**
 •⁠  ⁠Python 3.8+ (core language)
 •⁠  ⁠Flask (web framework)
 •⁠  ⁠Flask-SQLAlchemy (ORM for database)
@@ -105,16 +96,14 @@ TECHNOLOGIES USED
 •⁠  ⁠HTML5, CSS3 (frontend)
 •⁠  ⁠Jinja2 (templating engine)
 
-ADMIN CREDENTIALS (pre‑seeded)
-================================================================================
+**ADMIN CREDENTIALS (pre‑seeded)**
 Username: admin
 Password: admin123
 
 You can change these after first login or create additional admin accounts
 via the "Manage Users" admin panel.
 
-WAITING LIST & AUTO-RELEASE WORKFLOW
-================================================================================
+**WAITING LIST & AUTO-RELEASE WORKFLOW**
 1.⁠ ⁠User A books seats → status "pending" + payment deadline (now + 15 min).
 2.⁠ ⁠If User A does not confirm within 15 minutes:
    - Background job (runs every minute) sets status to "cancelled".
@@ -126,8 +115,7 @@ WAITING LIST & AUTO-RELEASE WORKFLOW
 This mechanism mimics a real cinema where no‑shows are automatically
 re‑allocated, maximizing seat occupancy and customer satisfaction.
 
-EXTENSION IDEAS FOR YOUR SEMESTER PROJECT
-================================================================================
+**EXTENSION IDEAS FOR YOUR SEMESTER PROJECT**
 •⁠  ⁠Integrate a real payment gateway (Stripe, PayPal sandbox).
 •⁠  ⁠Send email or SMS notifications when waiting list seats open.
 •⁠  ⁠Generate QR‑coded tickets that can be scanned at the entrance.
@@ -135,7 +123,3 @@ EXTENSION IDEAS FOR YOUR SEMESTER PROJECT
 •⁠  ⁠Implement seat preferences (aisle, near exit, wheelchair accessible).
 •⁠  ⁠Add multi‑language support (English/Spanish).
 •⁠  ⁠Create a REST API for mobile apps.
-
-================================================================================
-                              END OF README
-================================================================================
