@@ -17,7 +17,7 @@ list. When a pending booking expires or is cancelled, the first person on the
 waiting list is notified (via a flag on their dashboard) and can then book
 the freed seat.
 
-**The system includes two user roles:**
+The system includes two user roles:
 •⁠  ⁠Regular customers: view their bookings, cancel reservations, join waiting lists.
 •⁠  ⁠Administrators: add/edit/delete movies, manage showtimes, promote users,
   monitor the waiting list.
@@ -114,12 +114,3 @@ via the "Manage Users" admin panel.
 
 This mechanism mimics a real cinema where no‑shows are automatically
 re‑allocated, maximizing seat occupancy and customer satisfaction.
-
-**EXTENSION IDEAS FOR YOUR SEMESTER PROJECT**
-•⁠  ⁠Integrate a real payment gateway (Stripe, PayPal sandbox).
-•⁠  ⁠Send email or SMS notifications when waiting list seats open.
-•⁠  ⁠Generate QR‑coded tickets that can be scanned at the entrance.
-•⁠  ⁠Add a "recommended movies" engine based on user history.
-•⁠  ⁠Implement seat preferences (aisle, near exit, wheelchair accessible).
-•⁠  ⁠Add multi‑language support (English/Spanish).
-•⁠  ⁠Create a REST API for mobile apps.
